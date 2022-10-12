@@ -3,32 +3,30 @@ import java.util.Scanner;
 public class Calc {
     public static void main(String[] args) {
         add();
-        multiply();
     }
     public static void multiply() {
-        System.out.println("Your first number");
+        System.out.printf("Your first number: ");
         Scanner inputs = new Scanner(System.in);
         int firstNumber = inputs.nextInt();
 
-        System.out.println("Your Second number");
+        System.out.printf("Your Second number: ");
         int secondNumber = inputs.nextInt();
 
         int total = firstNumber * secondNumber;
-        System.out.println("Total is "+ total);
+        System.out.printf("Total is: "+ total);
     }
 
     public static void add(){
-        System.out.println("Enter First Number: ");
+        System.out.printf("Enter First Number: ");
         Scanner inputs = new Scanner(System.in);
         int firstNum = inputs.nextInt();
 
-        System.out.println("Enter Second Number: ");
+        System.out.printf("Enter Second Number: ");
         int secondNum = inputs.nextInt();
 
         int total = firstNum + secondNum;
-        System.out.println("The total is: " + total);
-
-             sub();
+        System.out.printf("The total is: " + total);
+        sub();
     }
 
     public static void sub()
@@ -41,7 +39,7 @@ public class Calc {
         int secondNumber = inputs.nextInt();
 
         int total = firstNumber - secondNumber;
-        System.out.println("Total is "+ total);
+        System.out.printf("Total is: "+ total);
         divide();
     }
 
@@ -55,6 +53,7 @@ public class Calc {
         int secondNumber = inputs.nextInt();
 
         int total = firstNumber / secondNumber;
-        System.out.printf("Total is "+ total);
+        System.out.printf("Total is: "+ total);
+        multiply();
     }
 }
